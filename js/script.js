@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	if(query['link']){
 		$('body').on('click', function(){
-			window.location = query['link'];
+			window.open(query['link'], '_blank');
 		});
 	}
 
