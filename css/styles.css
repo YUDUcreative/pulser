@@ -12,13 +12,27 @@ body {
 	height:100%;
 	background-image: url('../images/default.png');
 	background-repeat: no-repeat;
-	background-size: 25%;
 	background-position: center;
-	animation: pulse 1.6s ease-out infinite;
 	cursor:pointer;
 }
 
-@keyframes pulse {
+.small {
+	background-size: 25%;
+	animation: pulse-s 1.6s ease-out infinite;
+}
+
+.medium {
+	background-size: 30%;
+	animation: pulse-m 1.6s ease-out infinite;
+}
+
+.large {
+	background-size: 35%;
+	animation: pulse-l 1.6s ease-out infinite;
+}
+
+
+@keyframes pulse-s {
 	0% {
 		background-size: 25%;
 	}
@@ -36,3 +50,40 @@ body {
 	}
 }
 
+
+@keyframes pulse-m {
+	0% {
+		background-size: 30%;
+	}
+
+	40% {
+		background-size: 60%;
+	}
+
+	80% {
+		background-size: 30%;
+	}
+
+	100% {
+		background-size: : 30%;
+	}
+}
+
+
+@keyframes pulse-l {
+	0% {
+		background-size: 35%;
+	}
+
+	40% {
+		background-size: 70%;
+	}
+
+	80% {
+		background-size: 35%;
+	}
+
+	100% {
+		background-size: : 35%;
+	}
+}

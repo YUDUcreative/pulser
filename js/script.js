@@ -12,6 +12,12 @@ $(document).ready(function(){
 		});
 	}
 
+	if( -1 !=  $.inArray(query['size'], [ 'small','medium','large' ])) {
+		$('body').addClass(query['size']);
+	} else {
+		$('body').addClass('medium');
+	}
+
 	function getUrlVars(){
 	    var vars = [], hash;
 	    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
